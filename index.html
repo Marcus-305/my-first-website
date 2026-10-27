@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的第一个网站</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #dbeafe, #f5f3ff);
+      padding: 60px 20px;
+      color: #1e293b;
+    }
+
+    .card {
+      max-width: 600px;
+      margin: auto;
+      padding: 40px 24px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px #0001;
+    }
+
+    h1 {
+      color: #2563eb;
+    }
+
+    button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 10px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>欢迎来到我的网站！</h1>
+    <p>这是我使用 GitHub Pages 创建的第一个网页。</p>
+    <p>在这里，我将展示我的学习成果与创意项目。</p>
+    <button onclick="showMessage()">点击试试</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent =
+        "恭喜你！网页交互功能运行成功！";
+    }
+  </script>
+</body>
+</html>
